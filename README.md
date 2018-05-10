@@ -1,4 +1,4 @@
-# Maybach
+# Maybach (WORK IN PROGRESS)
 Maybach is a toolbox written in Swift.
 
 <p>
@@ -16,6 +16,21 @@ Maybach is a toolbox written in Swift.
 
 ## Introduction
 Maybach has been created in come for my personal requirements. Creating many new project gave me point of look to my behaviours. I just have been copying same code, same classes/extension to new projects and then I realise that this is a time to create framework - Maybach!
+
+## Features
+
+## Installation
+Cocoapods, Carthage, SPM, Manually
+
+## Contributing
+I hope you enjoy Maybach! If so it would be great to have another pair of hands to improve this project.
+How can you do it? Here you have some types:
+* Suggest new features.
+* Improve documentation.
+* Checking pull requests.
+* Making pull request.
+* Help with resloving issues.
+* Reporting bugs by making issue on github.
 
 ## License
 This project is released under the [MIT license](https://github.com/martin-przystalka/Maybach/blob/master/LICENSE).
