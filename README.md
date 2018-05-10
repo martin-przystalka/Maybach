@@ -9,6 +9,8 @@ Maybach is a toolbox written in Swift.
 <img src="https://travis-ci.com/martin-przystalka/Maybach.svg?branch=master" />
 <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg" />
 [![GitHub release](https://img.shields.io/github/release/martin-przystalka/Maybach.svg)](https://github.com/martin-przystalka/Maybach/releases)
+<a href="https://martin-przystalka.github.io/Maybach/"><img src="https://img.shields.io/badge/Documentation-%F0%9F%91%8D-blue.svg" /></a>
+
 
 </p>
 
