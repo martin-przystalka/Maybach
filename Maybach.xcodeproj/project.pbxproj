@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11E8687024E32232C83A7738 /* Pods_Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696DAC8BEA6BB9A6DD0EA9EE /* Pods_Maybach.framework */; };
+		1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */; };
+		1C570647205AD00600143482 /* MaybachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570646205AD00600143482 /* MaybachTests.swift */; };
+		1C570649205AD00600143482 /* Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; };
+		1C570654205AD84F00143482 /* FileTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570653205AD84F00143482 /* FileTest.swift */; };
+		1C810D4F202086D0006CE764 /* Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; };
+		1C810D50202086D0006CE764 /* Maybach.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C810D5520208CD8006CE764 /* LogType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C810D5420208CD8006CE764 /* LogType.swift */; };
+		1C8F290F20A186E100805C77 /* DispatchQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F290E20A186E100805C77 /* DispatchQueueTests.swift */; };
+		1C8F291120A18B5200805C77 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F291020A18B5200805C77 /* CGRectTests.swift */; };
+		1CD5C19A207F755000983C42 /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5C199207F755000983C42 /* MockView.swift */; };
+		1CD5C19C207F755600983C42 /* MockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD5C19B207F755600983C42 /* MockView.xib */; };
+		1CD5C19E207F758600983C42 /* UINibExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5C19D207F758600983C42 /* UINibExtensionTests.swift */; };
+		1CD5C1A0207F77C000983C42 /* UIResponderExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5C19F207F77C000983C42 /* UIResponderExtensionTests.swift */; };
+		1CD5C1A2207F782900983C42 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5C1A1207F782900983C42 /* StringExtensionTests.swift */; };
+		1CD5C1A4207F7ADF00983C42 /* MockStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5C1A3207F7ADF00983C42 /* MockStruct.swift */; };
+		1CE0061D207F3B09003FF6BC /* MockJson.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0061C207F3B09003FF6BC /* MockJson.geojson */; };
+		1CE0061F207F48C4003FF6BC /* LogTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0061E207F48C4003FF6BC /* LogTypeTests.swift */; };
+		1CE00622207F4991003FF6BC /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE00621207F4991003FF6BC /* UIColorExtensionTests.swift */; };
+		2EE49A87E6F3288F14759D36 /* Pods_MaybachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE521BB2E0C42FAA8EF5C37E /* Pods_MaybachTests.framework */; };
+		5F6875391F73F55E00C55D9F /* Maybach.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6875371F73F55E00C55D9F /* Maybach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F6875481F73FECF00C55D9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875471F73FECF00C55D9F /* AppDelegate.swift */; };
+		5F68754A1F73FECF00C55D9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875491F73FECF00C55D9F /* ViewController.swift */; };
+		5F68754D1F73FECF00C55D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F68754B1F73FECF00C55D9F /* Main.storyboard */; };
+		5F68754F1F73FECF00C55D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F68754E1F73FECF00C55D9F /* Assets.xcassets */; };
+		5F6875521F73FECF00C55D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6875501F73FECF00C55D9F /* LaunchScreen.storyboard */; };
+		5F68755D1F74E7CC00C55D9F /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68755C1F74E7CC00C55D9F /* UINib+Extension.swift */; };
+		5F6875611F74E84B00C55D9F /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875601F74E84B00C55D9F /* UIResponder+Extension.swift */; };
+		5F6875631F74E86200C55D9F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875621F74E86200C55D9F /* Functions.swift */; };
+		5F6875671F74E9B100C55D9F /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875661F74E9B100C55D9F /* CustomNavigationBar.swift */; };
+		5F6875691F74E9C100C55D9F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875681F74E9C100C55D9F /* File.swift */; };
+		5F68756B1F74E9D500C55D9F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68756A1F74E9D500C55D9F /* UIColor+Extension.swift */; };
+		5FADC3AE1F7D25DD0013BBF1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */; };
+		5FB2EF2C1FD686E600368CF7 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */; };
+		F6F96A2F1848FCE525F4D37A /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778D982442425DAD60E50113 /* Pods_Runner.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C57064A205AD00600143482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F68752B1F73F55E00C55D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6875331F73F55E00C55D9F;
+			remoteInfo = Maybach;
+		};
+		1C810D51202086D0006CE764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F68752B1F73F55E00C55D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6875331F73F55E00C55D9F;
+			remoteInfo = Maybach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C810D53202086D1006CE764 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C810D50202086D0006CE764 /* Maybach.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		1C570644205AD00600143482 /* MaybachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaybachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C570646205AD00600143482 /* MaybachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybachTests.swift; sourceTree = "<group>"; };
+		1C570648205AD00600143482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C570653205AD84F00143482 /* FileTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTest.swift; sourceTree = "<group>"; };
+		1C810D5420208CD8006CE764 /* LogType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogType.swift; sourceTree = "<group>"; };
+		1C8F290E20A186E100805C77 /* DispatchQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueTests.swift; sourceTree = "<group>"; };
+		1C8F291020A18B5200805C77 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
+		1CD5C199207F755000983C42 /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
+		1CD5C19B207F755600983C42 /* MockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MockView.xib; sourceTree = "<group>"; };
+		1CD5C19D207F758600983C42 /* UINibExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINibExtensionTests.swift; sourceTree = "<group>"; };
+		1CD5C19F207F77C000983C42 /* UIResponderExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtensionTests.swift; sourceTree = "<group>"; };
+		1CD5C1A1207F782900983C42 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		1CD5C1A3207F7ADF00983C42 /* MockStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStruct.swift; sourceTree = "<group>"; };
+		1CE0061C207F3B09003FF6BC /* MockJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockJson.geojson; sourceTree = "<group>"; };
+		1CE0061E207F48C4003FF6BC /* LogTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTypeTests.swift; sourceTree = "<group>"; };
+		1CE00621207F4991003FF6BC /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
+		31A0F354F2A93B6B7FACDB93 /* Pods-MaybachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaybachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests.debug.xcconfig"; sourceTree = "<group>"; };
+		445833064F754421ABBA193E /* Pods-Maybach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maybach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maybach/Pods-Maybach.debug.xcconfig"; sourceTree = "<group>"; };
+		5963292ED3388A0BA88197B9 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		5F6875341F73F55E00C55D9F /* Maybach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maybach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6875371F73F55E00C55D9F /* Maybach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maybach.h; sourceTree = "<group>"; };
+		5F6875381F73F55E00C55D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6875451F73FECF00C55D9F /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6875471F73FECF00C55D9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F6875491F73FECF00C55D9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F68754C1F73FECF00C55D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F68754E1F73FECF00C55D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6875511F73FECF00C55D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F6875531F73FECF00C55D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F68755C1F74E7CC00C55D9F /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
+		5F6875601F74E84B00C55D9F /* UIResponder+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
+		5F6875621F74E86200C55D9F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		5F6875661F74E9B100C55D9F /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		5F6875681F74E9C100C55D9F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5F68756A1F74E9D500C55D9F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		696DAC8BEA6BB9A6DD0EA9EE /* Pods_Maybach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maybach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		778D982442425DAD60E50113 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C015E2F6FE61BBE49F7FA5E /* Pods-Maybach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maybach.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maybach/Pods-Maybach.release.xcconfig"; sourceTree = "<group>"; };
+		CE521BB2E0C42FAA8EF5C37E /* Pods_MaybachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaybachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D352FD544AFC8909E20919F6 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		F15C880B6E075A8ED2C72003 /* Pods-MaybachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaybachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C570641205AD00600143482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C570649205AD00600143482 /* Maybach.framework in Frameworks */,
+				2EE49A87E6F3288F14759D36 /* Pods_MaybachTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6875301F73F55E00C55D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E8687024E32232C83A7738 /* Pods_Maybach.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6875421F73FECF00C55D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C810D4F202086D0006CE764 /* Maybach.framework in Frameworks */,
+				F6F96A2F1848FCE525F4D37A /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C57063F205ACBF700143482 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				5F6875621F74E86200C55D9F /* Functions.swift */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+		1C570645205AD00600143482 /* MaybachTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0061B207F3AE6003FF6BC /* Mock */,
+				1C570652205AD84400143482 /* Class */,
+				1CE00620207F4973003FF6BC /* Extension */,
+				1C570646205AD00600143482 /* MaybachTests.swift */,
+				1C570648205AD00600143482 /* Info.plist */,
+			);
+			path = MaybachTests;
+			sourceTree = "<group>";
+		};
+		1C570652205AD84400143482 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1C570653205AD84F00143482 /* FileTest.swift */,
+				1CE0061E207F48C4003FF6BC /* LogTypeTests.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		1C810D4D202086CD006CE764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				696DAC8BEA6BB9A6DD0EA9EE /* Pods_Maybach.framework */,
+				CE521BB2E0C42FAA8EF5C37E /* Pods_MaybachTests.framework */,
+				778D982442425DAD60E50113 /* Pods_Runner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CE0061B207F3AE6003FF6BC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0061C207F3B09003FF6BC /* MockJson.geojson */,
+				1CD5C199207F755000983C42 /* MockView.swift */,
+				1CD5C19B207F755600983C42 /* MockView.xib */,
+				1CD5C1A3207F7ADF00983C42 /* MockStruct.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		1CE00620207F4973003FF6BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1CE00621207F4991003FF6BC /* UIColorExtensionTests.swift */,
+				1CD5C19D207F758600983C42 /* UINibExtensionTests.swift */,
+				1CD5C19F207F77C000983C42 /* UIResponderExtensionTests.swift */,
+				1CD5C1A1207F782900983C42 /* StringExtensionTests.swift */,
+				1C8F290E20A186E100805C77 /* DispatchQueueTests.swift */,
+				1C8F291020A18B5200805C77 /* CGRectTests.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5F68752A1F73F55E00C55D9F = {
+			isa = PBXGroup;
+			children = (
+				5F6875361F73F55E00C55D9F /* Maybach */,
+				5F6875461F73FECF00C55D9F /* Runner */,
+				1C570645205AD00600143482 /* MaybachTests */,
+				5F6875351F73F55E00C55D9F /* Products */,
+				1C810D4D202086CD006CE764 /* Frameworks */,
+				A8769D047CC940F41B59443F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5F6875351F73F55E00C55D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F6875341F73F55E00C55D9F /* Maybach.framework */,
+				5F6875451F73FECF00C55D9F /* Runner.app */,
+				1C570644205AD00600143482 /* MaybachTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F6875361F73F55E00C55D9F /* Maybach */ = {
+			isa = PBXGroup;
+			children = (
+				1C57063F205ACBF700143482 /* Functions */,
+				5F68756D1F74E9F900C55D9F /* Class */,
+				5F68756C1F74E9E400C55D9F /* Extension */,
+				5F6875371F73F55E00C55D9F /* Maybach.h */,
+				5F6875381F73F55E00C55D9F /* Info.plist */,
+			);
+			path = Maybach;
+			sourceTree = "<group>";
+		};
+		5F6875461F73FECF00C55D9F /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				5F6875471F73FECF00C55D9F /* AppDelegate.swift */,
+				5F6875491F73FECF00C55D9F /* ViewController.swift */,
+				5F68754B1F73FECF00C55D9F /* Main.storyboard */,
+				5F68754E1F73FECF00C55D9F /* Assets.xcassets */,
+				5F6875501F73FECF00C55D9F /* LaunchScreen.storyboard */,
+				5F6875531F73FECF00C55D9F /* Info.plist */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		5F68756C1F74E9E400C55D9F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F68756A1F74E9D500C55D9F /* UIColor+Extension.swift */,
+				5F68755C1F74E7CC00C55D9F /* UINib+Extension.swift */,
+				5F6875601F74E84B00C55D9F /* UIResponder+Extension.swift */,
+				5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */,
+				5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */,
+				1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		5F68756D1F74E9F900C55D9F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5F6875661F74E9B100C55D9F /* CustomNavigationBar.swift */,
+				5F6875681F74E9C100C55D9F /* File.swift */,
+				1C810D5420208CD8006CE764 /* LogType.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		A8769D047CC940F41B59443F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				445833064F754421ABBA193E /* Pods-Maybach.debug.xcconfig */,
+				8C015E2F6FE61BBE49F7FA5E /* Pods-Maybach.release.xcconfig */,
+				31A0F354F2A93B6B7FACDB93 /* Pods-MaybachTests.debug.xcconfig */,
+				F15C880B6E075A8ED2C72003 /* Pods-MaybachTests.release.xcconfig */,
+				5963292ED3388A0BA88197B9 /* Pods-Runner.debug.xcconfig */,
+				D352FD544AFC8909E20919F6 /* Pods-Runner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F6875311F73F55E00C55D9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6875391F73F55E00C55D9F /* Maybach.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C570643205AD00600143482 /* MaybachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C57064C205AD00600143482 /* Build configuration list for PBXNativeTarget "MaybachTests" */;
+			buildPhases = (
+				AC6502EE6CE3508BC193EAE3 /* [CP] Check Pods Manifest.lock */,
+				1C570640205AD00600143482 /* Sources */,
+				1C570641205AD00600143482 /* Frameworks */,
+				1C570642205AD00600143482 /* Resources */,
+				5821F7AC32CE8EFF15FF669F /* [CP] Embed Pods Frameworks */,
+				0AFFDC37F1287F9814562E64 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C57064B205AD00600143482 /* PBXTargetDependency */,
+			);
+			name = MaybachTests;
+			productName = MaybachTests;
+			productReference = 1C570644205AD00600143482 /* MaybachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F6875331F73F55E00C55D9F /* Maybach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F68753C1F73F55E00C55D9F /* Build configuration list for PBXNativeTarget "Maybach" */;
+			buildPhases = (
+				35621BC2FC47CF08BB3E8EFD /* [CP] Check Pods Manifest.lock */,
+				5F68752F1F73F55E00C55D9F /* Sources */,
+				5F6875301F73F55E00C55D9F /* Frameworks */,
+				5F6875311F73F55E00C55D9F /* Headers */,
+				5F6875321F73F55E00C55D9F /* Resources */,
+				6C4AE9B8D86FD161DE3F4D9A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maybach;
+			productName = Maybach;
+			productReference = 5F6875341F73F55E00C55D9F /* Maybach.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F6875441F73FECF00C55D9F /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6875541F73FECF00C55D9F /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				D78DEE58C34D2496B660E446 /* [CP] Check Pods Manifest.lock */,
+				5F6875411F73FECF00C55D9F /* Sources */,
+				5F6875421F73FECF00C55D9F /* Frameworks */,
+				5F6875431F73FECF00C55D9F /* Resources */,
+				1C810D53202086D1006CE764 /* Embed Frameworks */,
+				1C49ED612035C4F500B9B8F7 /* Run Script - SwiftLint */,
+				AC548F7054BBD22B3CED0477 /* [CP] Embed Pods Frameworks */,
+				165264C752C019849FB01426 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C810D52202086D0006CE764 /* PBXTargetDependency */,
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 5F6875451F73FECF00C55D9F /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F68752B1F73F55E00C55D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = mh;
+				TargetAttributes = {
+					1C570643205AD00600143482 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5F6875331F73F55E00C55D9F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2GL87M38LZ;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					5F6875441F73FECF00C55D9F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2GL87M38LZ;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F68752E1F73F55E00C55D9F /* Build configuration list for PBXProject "Maybach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F68752A1F73F55E00C55D9F;
+			productRefGroup = 5F6875351F73F55E00C55D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F6875331F73F55E00C55D9F /* Maybach */,
+				5F6875441F73FECF00C55D9F /* Runner */,
+				1C570643205AD00600143482 /* MaybachTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C570642205AD00600143482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD5C19C207F755600983C42 /* MockView.xib in Resources */,
+				1CE0061D207F3B09003FF6BC /* MockJson.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6875321F73F55E00C55D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6875431F73FECF00C55D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6875521F73FECF00C55D9F /* LaunchScreen.storyboard in Resources */,
+				5F68754F1F73FECF00C55D9F /* Assets.xcassets in Resources */,
+				5F68754D1F73FECF00C55D9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AFFDC37F1287F9814562E64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		165264C752C019849FB01426 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C49ED612035C4F500B9B8F7 /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		35621BC2FC47CF08BB3E8EFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maybach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5821F7AC32CE8EFF15FF669F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C4AE9B8D86FD161DE3F4D9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maybach/Pods-Maybach-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC548F7054BBD22B3CED0477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC6502EE6CE3508BC193EAE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaybachTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D78DEE58C34D2496B660E446 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C570640205AD00600143482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE00622207F4991003FF6BC /* UIColorExtensionTests.swift in Sources */,
+				1CE0061F207F48C4003FF6BC /* LogTypeTests.swift in Sources */,
+				1CD5C1A2207F782900983C42 /* StringExtensionTests.swift in Sources */,
+				1CD5C1A0207F77C000983C42 /* UIResponderExtensionTests.swift in Sources */,
+				1C8F291120A18B5200805C77 /* CGRectTests.swift in Sources */,
+				1CD5C19E207F758600983C42 /* UINibExtensionTests.swift in Sources */,
+				1C8F290F20A186E100805C77 /* DispatchQueueTests.swift in Sources */,
+				1CD5C19A207F755000983C42 /* MockView.swift in Sources */,
+				1CD5C1A4207F7ADF00983C42 /* MockStruct.swift in Sources */,
+				1C570654205AD84F00143482 /* FileTest.swift in Sources */,
+				1C570647205AD00600143482 /* MaybachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F68752F1F73F55E00C55D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6875631F74E86200C55D9F /* Functions.swift in Sources */,
+				1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */,
+				5FADC3AE1F7D25DD0013BBF1 /* String+Extension.swift in Sources */,
+				5F68756B1F74E9D500C55D9F /* UIColor+Extension.swift in Sources */,
+				5F6875611F74E84B00C55D9F /* UIResponder+Extension.swift in Sources */,
+				5F68755D1F74E7CC00C55D9F /* UINib+Extension.swift in Sources */,
+				5F6875691F74E9C100C55D9F /* File.swift in Sources */,
+				1C810D5520208CD8006CE764 /* LogType.swift in Sources */,
+				5F6875671F74E9B100C55D9F /* CustomNavigationBar.swift in Sources */,
+				5FB2EF2C1FD686E600368CF7 /* CGRect+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6875411F73FECF00C55D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F68754A1F73FECF00C55D9F /* ViewController.swift in Sources */,
+				5F6875481F73FECF00C55D9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C57064B205AD00600143482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6875331F73F55E00C55D9F /* Maybach */;
+			targetProxy = 1C57064A205AD00600143482 /* PBXContainerItemProxy */;
+		};
+		1C810D52202086D0006CE764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6875331F73F55E00C55D9F /* Maybach */;
+			targetProxy = 1C810D51202086D0006CE764 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F68754B1F73FECF00C55D9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F68754C1F73FECF00C55D9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F6875501F73FECF00C55D9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6875511F73FECF00C55D9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C57064D205AD00600143482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A0F354F2A93B6B7FACDB93 /* Pods-MaybachTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				INFOPLIST_FILE = MaybachTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mh.MaybachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C57064E205AD00600143482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15C880B6E075A8ED2C72003 /* Pods-MaybachTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MaybachTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mh.MaybachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F68753A1F73F55E00C55D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F68753B1F73F55E00C55D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F68753D1F73F55E00C55D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445833064F754421ABBA193E /* Pods-Maybach.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2GL87M38LZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = 1;
+				INFOPLIST_FILE = Maybach/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies -Xfrontend -warn-long-expression-type-checking=150 -Xfrontend -warn-long-function-bodies=150 -Onone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mh.Maybach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		5F68753E1F73F55E00C55D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C015E2F6FE61BBE49F7FA5E /* Pods-Maybach.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2GL87M38LZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maybach/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mh.Maybach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		5F6875551F73FECF00C55D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5963292ED3388A0BA88197B9 /* Pods-Runner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GL87M38LZ;
+				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mh.Runner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		5F6875561F73FECF00C55D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D352FD544AFC8909E20919F6 /* Pods-Runner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GL87M38LZ;
+				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mh.Runner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C57064C205AD00600143482 /* Build configuration list for PBXNativeTarget "MaybachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C57064D205AD00600143482 /* Debug */,
+				1C57064E205AD00600143482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F68752E1F73F55E00C55D9F /* Build configuration list for PBXProject "Maybach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F68753A1F73F55E00C55D9F /* Debug */,
+				5F68753B1F73F55E00C55D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F68753C1F73F55E00C55D9F /* Build configuration list for PBXNativeTarget "Maybach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F68753D1F73F55E00C55D9F /* Debug */,
+				5F68753E1F73F55E00C55D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6875541F73FECF00C55D9F /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6875551F73FECF00C55D9F /* Debug */,
+				5F6875561F73FECF00C55D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F68752B1F73F55E00C55D9F /* Project object */;
+}

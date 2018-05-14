@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoreDataProvider Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CoreDataProvider" class="dashAnchor"></a>
+    <a title="CoreDataProvider Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CoreDataProvider Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataProvider.html">CoreDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomNavigationBar.html">CustomNavigationBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/File.html">File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/File/Extension.html">– Extension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/LogType.html">LogType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSManagedObject.html">NSManagedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UINib.html">UINib</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIResponder.html">UIResponder</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CoreDataProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CoreDataProvider</span></code></pre>
+
+                </div>
+              </div>
+            <p>Singleton wrapper around CoreData framework.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC6sharedACvZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC6sharedACvZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shared instance. This is only public access to initialiser.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span> <span class="o">=</span> <span class="kt">CoreDataProvider</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC7contextSo22NSManagedObjectContextCSgv"></a>
+                    <a name="//apple_ref/swift/Property/context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC7contextSo22NSManagedObjectContextCSgv">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Context of CoreData.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC13contextLoadedyycSgv"></a>
+                    <a name="//apple_ref/swift/Property/contextLoaded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC13contextLoadedyycSgv">contextLoaded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Closure trigered just after end of loading persistentStore.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">contextLoaded</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC6removeyyp6object_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(object:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC6removeyyp6object_tF">remove(object:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removing passed object from CoreData.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC6createxSgxmlF"></a>
+                    <a name="//apple_ref/swift/Method/create(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC6createxSgxmlF">create(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create object in CoreData with given type and return it. If passed type is not represented in CoreData, return nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">create</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">classType</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC6createxSgxm_So22NSManagedObjectContextCSgtlF"></a>
+                    <a name="//apple_ref/swift/Method/create(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC6createxSgxm_So22NSManagedObjectContextCSgtlF">create(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create object in CoreData with given type, context and return it. If passed type is not represented in CoreData, return nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">create</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">classType</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">objectContext</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC5fetchSayxGxm_So11NSPredicateCSgtlF"></a>
+                    <a name="//apple_ref/swift/Method/fetch(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC5fetchSayxGxm_So11NSPredicateCSgtlF">fetch(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns objects array of given type. Can be filtered by passing predicate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">fetch</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">classType</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Maybach16CoreDataProviderC12initDatabaseySSF"></a>
+                    <a name="//apple_ref/swift/Method/initDatabase(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Maybach16CoreDataProviderC12initDatabaseySSF">initDatabase(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creating CoreData instance. When initialising is done <code><a href="../Classes/CoreDataProvider.html#/s:7Maybach16CoreDataProviderC13contextLoadedyycSgv">contextLoaded</a></code> is triggered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initDatabase</span><span class="p">(</span><span class="n">_</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
