@@ -20,7 +20,32 @@ Maybach has been created in come for my personal requirements. Creating many new
 ## Features
 
 ## Installation
-Cocoapods, Carthage, SPM, Manually
+
+### CocoaPods
+CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Go to project package using terminal and install using command:
+
+`gem install cocoapods`
+
+Next you will have to specify Maybach in your podfile:
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'Maybach', '~> v1.0.0'
+end
+```
+  
+You are almost done, now let cocoapods do thier job, run:
+
+`pod install`
+
+
+
+
+
+Carthage, SPM, Manually
 
 ## Contributing
 I hope you enjoy Maybach! If so it would be great to have another pair of hands to improve this project.
