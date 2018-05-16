@@ -19,6 +19,10 @@ Maybach has been created in come for my personal requirements. Creating many new
 
 ## Features
 
+Fast initializing view from xib. Just pass your view class to `get`, that's all. Remember to have same xib name as class name:
+
+
+
 ## Installation
 
 ### CocoaPods
@@ -49,16 +53,15 @@ Carthage is intended to be the simplest way to add frameworks to your Cocoa appl
 
 Carthage builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings. [More about Carthage](https://github.com/Carthage/Carthage).
 
-Once you are setup with Carthage, simply just add below line to your `Cartfile`.
+Once you are setup with Carthage, simply just add line below to your `Cartfile`.
 
 `github "martin-przystalka/Maybach"`
 
 ### Manually
 
-TODO
+If you dont want to use any dependency management tool, you can do it manually via git submodule. 
 
-
-
+[More about manual integration](https://www.raywenderlich.com/155150/dependency-management-using-git-submodules).
 
 ## Contributing
 I hope you enjoy Maybach! If so it would be great to have another pair of hands to improve this project.
