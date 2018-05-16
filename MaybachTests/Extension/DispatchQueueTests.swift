@@ -48,6 +48,6 @@ final class DispatchQueueTests: XCTestCase {
                 backgroundThreadExpectation.fulfill()
             }
         }
-        wait(for: [backgroundThreadExpectation], timeout: 0.1)
+        wait(for: [backgroundThreadExpectation], timeout: 0.5)
     }
 }
