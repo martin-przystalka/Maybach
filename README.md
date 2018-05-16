@@ -21,7 +21,9 @@ Maybach has been created in come for my personal requirements. Creating many new
 
 Fast initializing view from xib. Just pass your view class to `get`, that's all. Remember to have same xib name as class name:
 
-
+```swift
+let viewFromXIB = UINib.get(ExampleView.self) // constant viewFromXIB is type of ExampleView.
+```
 
 ## Installation
 
