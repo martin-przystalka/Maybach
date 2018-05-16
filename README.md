@@ -20,10 +20,10 @@ Maybach has been created in come for my personal requirements. Creating many new
 ## Features
 
 
-[view from xib](#view-from-xib)
+- [view from xib](#view-from-xib)
 
 
-###### view from xib
+#### view from xib
 Fast initializing view from xib. Just pass your view class to `get`, that's all. Remember to have same xib name as class name:
 
 ```swift
