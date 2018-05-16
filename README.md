@@ -22,6 +22,7 @@ Maybach has been created in come for my personal requirements. Creating many new
 ## Installation
 
 ### CocoaPods
+
 CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Go to project package using terminal and install using command:
 
 `gem install cocoapods`
@@ -42,10 +43,22 @@ You are almost done, now let cocoapods do thier job, run:
 `pod install`
 
 
+### Carthage
+
+Carthage is intended to be the simplest way to add frameworks to your Cocoa application.
+
+Carthage builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings. [More about Carthage](https://github.com/Carthage/Carthage).
+
+Once you are setup with Carthage, simply just add below line to your `Cartfile`.
+
+`github "martin-przystalka/Maybach"`
+
+### Manually
+
+TODO
 
 
 
-Carthage, SPM, Manually
 
 ## Contributing
 I hope you enjoy Maybach! If so it would be great to have another pair of hands to improve this project.
