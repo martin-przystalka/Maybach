@@ -2,8 +2,11 @@
 Maybach is a toolbox written in Swift. This is alpha version, some feature's can be not available yet.
 
 <p>
-  
+
+<!---
 <a href="https://codeclimate.com/github/martin-przystalka/Maybach/test_coverage"><img src="https://api.codeclimate.com/v1/badges/46dadcf02d64660c82a1/test_coverage" /></a>
+--->
+ 
 <a href="https://codeclimate.com/github/martin-przystalka/Maybach/maintainability"><img src="https://api.codeclimate.com/v1/badges/46dadcf02d64660c82a1/maintainability" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <img src="https://travis-ci.com/martin-przystalka/Maybach.svg?branch=master" />
@@ -24,7 +27,7 @@ Maybach has been created in come for my personal requirements. Creating many new
 - [adjust color](#adjust-color)
 - [hex color](#hex-color)
 - [substring](#substring)
-- [string. Is number?](#string.-is-number?)
+- [string. Is number?](#string-is-number)
 
 
 #### view from xib
