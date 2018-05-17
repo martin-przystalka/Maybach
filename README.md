@@ -1,5 +1,5 @@
-# Maybach (WORK IN PROGRESS)
-Maybach is a toolbox written in Swift.    
+# Maybach
+Maybach is a toolbox written in Swift. This is alpha version, some feature's can be not available yet.
 
 <p>
   
@@ -22,6 +22,9 @@ Maybach has been created in come for my personal requirements. Creating many new
 
 - [view from xib](#view-from-xib)
 - [adjust color](#adjust-color)
+- [hex color](#hex-color)
+- [substring](#substring)
+- [string. Is number?](#string.-is-number?)
 
 
 #### view from xib
@@ -38,6 +41,38 @@ Change color using `lighter` or `darker` function, just pass desired percentage 
 let color = UIColor.blue
 let lighterColor = color.lighter(by: 0.20)
 let defaultLighterColor = color.lighter() //making color lighter by 40%
+```
+
+#### hex color
+Get color from hex using UIColor constructor. If you forget # sign, it is not a problem, this case is supported.
+
+```swift
+let hexColor = UIColor(hex: "#000000")
+let hexColorWithOutHash = UIColor(hex: "000000")
+```
+
+#### substring
+Easy way to get substring without need to play with `String.Index`.
+
+```swift
+let exampleText = "This is example foo text."
+let subString = exampleText.substring(from: 0, to: 3)
+let subStringTwo = exampleText.substring(from: 8, to: 14)
+     
+print(subString)      // This
+print(subStringTwo)   // example
+```
+
+#### string. Is number?
+Elegant check for string.
+
+```swift
+let exampleText = "This is example foo text."
+let subString = exampleText.substring(from: 0, to: 3)
+let subStringTwo = exampleText.substring(from: 8, to: 14)
+     
+print(subString)      // This
+print(subStringTwo)   // example
 ```
 
 ## Installation
