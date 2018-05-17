@@ -26,38 +26,29 @@ extension UIColor {
     }
     
     ///Changing the color by making it more lighter and returns it. Optional parameter, representing by percentage.
-    public func lighter(by percentage: CGFloat = 0.3) -> UIColor {
-        return self.goLighter(by: abs(percentage))
+    public func lighter(by percentage: CGFloat = 0.4) -> UIColor {
+        return self.changeWarmth(abs(percentage * 100))
     }
     
     ///Changing the color by making it more darker and returns it. Optional parameter, representing by percentage.
-    public func darker(by percentage: CGFloat = 0.3) -> UIColor {
-        return self.goDarker(by: -abs(percentage))
+    public func darker(by percentage: CGFloat = 0.4) -> UIColor {
+        return self.changeWarmth(-abs(percentage * 100))
     }
     
-    private func goDarker(by factor: CGFloat) -> UIColor {
-        var hue: CGFloat = 0
-        var saturation: CGFloat = 0
-        var brightness: CGFloat = 0
-        var alpha: CGFloat = 0
-        if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
-            return UIColor(hue: hue, saturation: saturation, brightness: brightness * factor, alpha: alpha)
+    private func changeWarmth(_ percentage: CGFloat) -> UIColor {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        
+        if(getRed(&r, green: &g, blue: &b, alpha: &a)) {
+            return UIColor(red: min(r + percentage / 100, 1.0),
+                           green: min(g + percentage / 100, 1.0),
+                           blue: min(b + percentage / 100, 1.0),
+                           alpha: a)
         } else {
             return self
         }
     }
     
-    private func goLighter(by percentage: CGFloat) -> UIColor {
-        var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        if self.getHue(&h, saturation: &s, brightness: &b, alpha: &a) {
-            if b < 1.0 {
-                let newB: CGFloat = max(min(b + percentage * b, 1.0), 0, 0)
-                return UIColor(hue: h, saturation: s, brightness: newB, alpha: a)
-            } else {
-                let newS: CGFloat = min(max(s - percentage * s, 0.0), 1.0)
-                return UIColor(hue: h, saturation: newS, brightness: b, alpha: a)
-            }
-        }
-        return self
-    }
 }
