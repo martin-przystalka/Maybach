@@ -1,5 +1,5 @@
 # Maybach (WORK IN PROGRESS)
-Maybach is a toolbox written in Swift.
+Maybach is a toolbox written in Swift.    
 
 <p>
   
@@ -21,6 +21,7 @@ Maybach has been created in come for my personal requirements. Creating many new
 
 
 - [view from xib](#view-from-xib)
+- [adjust color](#adjust-color)
 
 
 #### view from xib
@@ -28,6 +29,15 @@ Fast initializing view from xib. Just pass your view class to `get`, that's all.
 
 ```swift
 let viewFromXIB = UINib.get(ExampleView.self) // constant viewFromXIB is type of ExampleView.
+```
+
+#### adjust color
+Change color using `lighter` or `darker` function, just pass desired percentage or leave default value.
+
+```swift
+let color = UIColor.blue
+let lighterColor = color.lighter(by: 0.20)
+let defaultLighterColor = color.lighter() //making color lighter by 40%
 ```
 
 ## Installation
