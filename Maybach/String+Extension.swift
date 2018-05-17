@@ -22,8 +22,8 @@ extension String {
     }
     
     ///Check does current string can be casted to Int type.
-    public func isNumber() -> Bool {
-        let isNumber = Int(self) != nil
+    public var isNumber: Bool {
+        let isNumber = Double(self) != nil
         return isNumber
     }
 }

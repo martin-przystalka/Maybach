@@ -22,11 +22,11 @@ final class StringExtensionTests: XCTestCase {
     
     func testIsNumber() {
         let numberString = "233243"
-        XCTAssertTrue(numberString.isNumber())
+        XCTAssertTrue(numberString.isNumber)
     }
     
     func testIsNumberFail() {
         let testString = "testTest"
-        XCTAssertFalse(testString.isNumber())
+        XCTAssertFalse(testString.isNumber)
     }
 }

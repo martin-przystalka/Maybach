@@ -26,12 +26,12 @@ extension UIColor {
     }
     
     ///Changing the color by making it more lighter and returns it. Optional parameter, representing by percentage.
-    public func lighter(by percentage: CGFloat = 0.4) -> UIColor {
+    public func lighter(by percentage: CGFloat = 0.1) -> UIColor {
         return self.changeWarmth(abs(percentage * 100))
     }
     
     ///Changing the color by making it more darker and returns it. Optional parameter, representing by percentage.
-    public func darker(by percentage: CGFloat = 0.4) -> UIColor {
+    public func darker(by percentage: CGFloat = 0.1) -> UIColor {
         return self.changeWarmth(-abs(percentage * 100))
     }
     
