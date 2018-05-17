@@ -22,13 +22,12 @@ Maybach has been created in come for my personal requirements. Creating many new
 
 ## Features
 
-
 - [view from xib](#view-from-xib)
 - [adjust color](#adjust-color)
 - [hex color](#hex-color)
 - [substring](#substring)
 - [string. Is number?](#string-is-number)
-
+- [background thread](#background-thread)
 
 #### view from xib
 Fast initializing view from xib. Just pass your view class to `get`, that's all. Remember to have same xib name as class name:
@@ -59,23 +58,35 @@ Easy way to get substring without need to play with `String.Index`.
 
 ```swift
 let exampleText = "This is example foo text."
-let subString = exampleText.substring(from: 0, to: 3)
-let subStringTwo = exampleText.substring(from: 8, to: 14)
+let substring = exampleText.substring(from: 0, to: 3)
+let substringTwo = exampleText.substring(from: 8, to: 14)
      
-print(subString)      // This
-print(subStringTwo)   // example
+print(substring)      // This
+print(substringTwo)   // example
 ```
 
 #### string. Is number?
 Elegant check for string.
 
 ```swift
-let exampleText = "This is example foo text."
-let subString = exampleText.substring(from: 0, to: 3)
-let subStringTwo = exampleText.substring(from: 8, to: 14)
-     
-print(subString)      // This
-print(subStringTwo)   // example
+let numberString = "-1212443.242325"
+print(numberString.isNumber) // true
+print("0".isNumber) // true
+```
+
+#### background thread
+Human friendly syntax for accessing async background thread.
+
+```swift
+DispatchQueue.background {
+    ...
+}
+```
+You can also pass delay.
+```swift
+DispatchQueue.background(delay: 0.2) { // delay in seconds, block will be executed after 200 milliseconds.
+    ...
+}
 ```
 
 ## Installation
