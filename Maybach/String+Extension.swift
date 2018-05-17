@@ -2,8 +2,8 @@
 //  String+Extension.swift
 //  Maybach
 //
-//  Created by Martin Przystalka on 28/09/2017.
-//  Copyright © 2017 mh. All rights reserved.
+//  Created by Martin Przystalka on 14/05/2018.
+//  Copyright © 2018 MH. The MIT License (MIT).
 //
 
 ///Extensions for String class.
