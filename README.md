@@ -28,6 +28,7 @@ Maybach has been created in come for my personal requirements. Creating many new
 - [substring](#substring)
 - [string. Is number?](#string-is-number)
 - [background thread](#background-thread)
+- [logging](#logging)
 
 #### view from xib
 Fast initializing view from xib. Just pass your view class to `get`, that's all. Remember to have same xib name as class name:
@@ -87,6 +88,14 @@ You can also pass delay.
 DispatchQueue.background(delay: 0.2) { // delay in seconds, block will be executed after 200 milliseconds.
     ...
 }
+```
+
+#### logging
+`log` is a wrapper around print(). This type of logging force developers to keep one convention of printing and make application more readable. 
+
+```swift
+log(.info, self, #function, #line, "This is Example message.")
+log(.error, self, #function, #line)
 ```
 
 ## Installation
