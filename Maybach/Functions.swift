@@ -12,9 +12,13 @@ public func log(_ message: String) {
 }
 
 ///Printing message to console with composed format.
-public func log(_ type: LogType, _ className: Any, _ functionName: String, _ lineNumber: Int) {
+public func log(_ type: LogType,
+                _ className: Any,
+                _ functionName: String,
+                _ lineNumber: Int,
+                _ description: String = "") {
     let typeString = type.rawValue
     let classString = String(describing: className)
-    let message = "\(typeString) \(classString) function: \(functionName) line: \(lineNumber)"
+    let message = "\(typeString) \(classString) function: \(functionName) line: \(lineNumber). \(description)"
     log(message)
 }
