@@ -9,17 +9,17 @@
 Pod::Spec.new do |s|
 
   s.name         = "Maybach"
-  s.version      = "0.0.15"
+  s.version      = "0.0.1"
   s.summary      = "Maybach is a mix of help class and extension's"
   s.description  = "Maybach is a mix of help extension's and class"
-  s.homepage     = "https://www.google.com"
+  s.homepage     = "https://github.com/martin-przystalka/Maybach/blob/master/README.md"
   s.platform     = :ios
   s.platform     = :ios, "9.0"
 
 
   s.license      = "MIT"
-  s.author             = { "Martin Przystalka" => "martin.przystalka@gmail.com" }
-  s.source       = { :git => "https://martinprzystalka@bitbucket.org/martinprzystalka/maybach-ios.git", :tag => "#{s.version}" }
+  s.author             = { "Martin Przystalka" => "martin.przystalka.developer@gmail.com" }
+  s.source       = { :git => "https://github.com/martin-przystalka/Maybach.git", :tag => "#{s.version}" }
 
   s.source_files  = "Maybach/Maybach", "Maybach/Maybach/**/*.{h,m}"
   s.exclude_files = "Maybach/Maybach/Exclude"
