@@ -92,7 +92,7 @@ public class CustomNavigationBar: UINavigationBar {
     }
     
     private func onInit() {
-        titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         setBackgroundImage(UIImage(), for: .default)
         shadowImage = UIImage()
         isTranslucent = true

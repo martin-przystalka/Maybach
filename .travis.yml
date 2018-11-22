@@ -1,9 +1,9 @@
 language: swift
-osx_image: xcode9.2
+osx_image: xcode10.1
 script:
 #  - bundle exec rspec $TEST_DIRECTORY
   - fastlane full
-  
+
 #  env:
 #  - TEST_DIRECTORY=spec/models
 #    SPEC_OPTS="--color --profile"

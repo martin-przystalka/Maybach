@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name            = "Maybach"
-  s.swift_version   = '4.1'
+  s.swift_version   = '4.2'
   s.version         = "0.0.1"
   s.summary         = "Maybach is a mix of help class and extension's"
   s.description     = "Maybach is a mix of help extension's and class"
