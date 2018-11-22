@@ -6,4 +6,16 @@ lane :full do
   run_tests(scheme: "Maybach")
 end
 
+lane :github_release do
+  version = version_get_podspec(path: "Maybach.podspec")
+  set_github_release(
+    repository_name: "martin-przystalka/Maybach",
+    api_token: ENV["GITHUB_TOKEN"],
+    name: "TODO: add here release title",
+    tag_name: version,
+    description: (File.read("changelog") rescue "No changelog provided"),
+    commitish: "master"
+)
+end
+
 end
