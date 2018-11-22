@@ -40,8 +40,9 @@ extension UIColor {
         var g: CGFloat = 0
         var b: CGFloat = 0
         var a: CGFloat = 0
+        let isPositive = getRed(&r, green: &g, blue: &b, alpha: &a)
         
-        if(getRed(&r, green: &g, blue: &b, alpha: &a)) {
+        if isPositive {
             return UIColor(red: min(r + percentage / 100, 1.0),
                            green: min(g + percentage / 100, 1.0),
                            blue: min(b + percentage / 100, 1.0),
