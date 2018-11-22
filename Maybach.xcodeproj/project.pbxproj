@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11E8687024E32232C83A7738 /* Pods_Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696DAC8BEA6BB9A6DD0EA9EE /* Pods_Maybach.framework */; };
 		1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */; };
 		1C570647205AD00600143482 /* MaybachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570646205AD00600143482 /* MaybachTests.swift */; };
 		1C570649205AD00600143482 /* Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; };
@@ -26,7 +25,6 @@
 		1CE0061D207F3B09003FF6BC /* MockJson.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0061C207F3B09003FF6BC /* MockJson.geojson */; };
 		1CE0061F207F48C4003FF6BC /* LogTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0061E207F48C4003FF6BC /* LogTypeTests.swift */; };
 		1CE00622207F4991003FF6BC /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE00621207F4991003FF6BC /* UIColorExtensionTests.swift */; };
-		2EE49A87E6F3288F14759D36 /* Pods_MaybachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE521BB2E0C42FAA8EF5C37E /* Pods_MaybachTests.framework */; };
 		5F6875391F73F55E00C55D9F /* Maybach.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6875371F73F55E00C55D9F /* Maybach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F6875481F73FECF00C55D9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875471F73FECF00C55D9F /* AppDelegate.swift */; };
 		5F68754A1F73FECF00C55D9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875491F73FECF00C55D9F /* ViewController.swift */; };
@@ -41,7 +39,6 @@
 		5F68756B1F74E9D500C55D9F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68756A1F74E9D500C55D9F /* UIColor+Extension.swift */; };
 		5FADC3AE1F7D25DD0013BBF1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */; };
 		5FB2EF2C1FD686E600368CF7 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */; };
-		F6F96A2F1848FCE525F4D37A /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778D982442425DAD60E50113 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,9 +90,6 @@
 		1CE0061C207F3B09003FF6BC /* MockJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockJson.geojson; sourceTree = "<group>"; };
 		1CE0061E207F48C4003FF6BC /* LogTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTypeTests.swift; sourceTree = "<group>"; };
 		1CE00621207F4991003FF6BC /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
-		31A0F354F2A93B6B7FACDB93 /* Pods-MaybachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaybachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests.debug.xcconfig"; sourceTree = "<group>"; };
-		445833064F754421ABBA193E /* Pods-Maybach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maybach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maybach/Pods-Maybach.debug.xcconfig"; sourceTree = "<group>"; };
-		5963292ED3388A0BA88197B9 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		5F6875341F73F55E00C55D9F /* Maybach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maybach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6875371F73F55E00C55D9F /* Maybach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maybach.h; sourceTree = "<group>"; };
 		5F6875381F73F55E00C55D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,12 +108,6 @@
 		5F68756A1F74E9D500C55D9F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
-		696DAC8BEA6BB9A6DD0EA9EE /* Pods_Maybach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maybach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		778D982442425DAD60E50113 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C015E2F6FE61BBE49F7FA5E /* Pods-Maybach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maybach.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maybach/Pods-Maybach.release.xcconfig"; sourceTree = "<group>"; };
-		CE521BB2E0C42FAA8EF5C37E /* Pods_MaybachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaybachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D352FD544AFC8909E20919F6 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
-		F15C880B6E075A8ED2C72003 /* Pods-MaybachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaybachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +116,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C570649205AD00600143482 /* Maybach.framework in Frameworks */,
-				2EE49A87E6F3288F14759D36 /* Pods_MaybachTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E8687024E32232C83A7738 /* Pods_Maybach.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C810D4F202086D0006CE764 /* Maybach.framework in Frameworks */,
-				F6F96A2F1848FCE525F4D37A /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,16 +166,6 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		1C810D4D202086CD006CE764 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				696DAC8BEA6BB9A6DD0EA9EE /* Pods_Maybach.framework */,
-				CE521BB2E0C42FAA8EF5C37E /* Pods_MaybachTests.framework */,
-				778D982442425DAD60E50113 /* Pods_Runner.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1CE0061B207F3AE6003FF6BC /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,8 +197,6 @@
 				5F6875461F73FECF00C55D9F /* Runner */,
 				1C570645205AD00600143482 /* MaybachTests */,
 				5F6875351F73F55E00C55D9F /* Products */,
-				1C810D4D202086CD006CE764 /* Frameworks */,
-				A8769D047CC940F41B59443F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,19 +258,6 @@
 			name = Class;
 			sourceTree = "<group>";
 		};
-		A8769D047CC940F41B59443F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				445833064F754421ABBA193E /* Pods-Maybach.debug.xcconfig */,
-				8C015E2F6FE61BBE49F7FA5E /* Pods-Maybach.release.xcconfig */,
-				31A0F354F2A93B6B7FACDB93 /* Pods-MaybachTests.debug.xcconfig */,
-				F15C880B6E075A8ED2C72003 /* Pods-MaybachTests.release.xcconfig */,
-				5963292ED3388A0BA88197B9 /* Pods-Runner.debug.xcconfig */,
-				D352FD544AFC8909E20919F6 /* Pods-Runner.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -316,12 +276,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C57064C205AD00600143482 /* Build configuration list for PBXNativeTarget "MaybachTests" */;
 			buildPhases = (
-				AC6502EE6CE3508BC193EAE3 /* [CP] Check Pods Manifest.lock */,
 				1C570640205AD00600143482 /* Sources */,
 				1C570641205AD00600143482 /* Frameworks */,
 				1C570642205AD00600143482 /* Resources */,
-				5821F7AC32CE8EFF15FF669F /* [CP] Embed Pods Frameworks */,
-				0AFFDC37F1287F9814562E64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,12 +294,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F68753C1F73F55E00C55D9F /* Build configuration list for PBXNativeTarget "Maybach" */;
 			buildPhases = (
-				35621BC2FC47CF08BB3E8EFD /* [CP] Check Pods Manifest.lock */,
 				5F68752F1F73F55E00C55D9F /* Sources */,
 				5F6875301F73F55E00C55D9F /* Frameworks */,
 				5F6875311F73F55E00C55D9F /* Headers */,
 				5F6875321F73F55E00C55D9F /* Resources */,
-				6C4AE9B8D86FD161DE3F4D9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,14 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F6875541F73FECF00C55D9F /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
-				D78DEE58C34D2496B660E446 /* [CP] Check Pods Manifest.lock */,
 				5F6875411F73FECF00C55D9F /* Sources */,
 				5F6875421F73FECF00C55D9F /* Frameworks */,
 				5F6875431F73FECF00C55D9F /* Resources */,
 				1C810D53202086D1006CE764 /* Embed Frameworks */,
 				1C49ED612035C4F500B9B8F7 /* Run Script - SwiftLint */,
-				AC548F7054BBD22B3CED0477 /* [CP] Embed Pods Frameworks */,
-				165264C752C019849FB01426 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,36 +406,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AFFDC37F1287F9814562E64 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		165264C752C019849FB01426 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1C49ED612035C4F500B9B8F7 /* Run Script - SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,105 +419,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		35621BC2FC47CF08BB3E8EFD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Maybach-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5821F7AC32CE8EFF15FF669F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaybachTests/Pods-MaybachTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C4AE9B8D86FD161DE3F4D9A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maybach/Pods-Maybach-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC548F7054BBD22B3CED0477 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC6502EE6CE3508BC193EAE3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MaybachTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D78DEE58C34D2496B660E446 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -681,7 +504,6 @@
 /* Begin XCBuildConfiguration section */
 		1C57064D205AD00600143482 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31A0F354F2A93B6B7FACDB93 /* Pods-MaybachTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
@@ -702,7 +524,6 @@
 		};
 		1C57064E205AD00600143482 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F15C880B6E075A8ED2C72003 /* Pods-MaybachTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
@@ -841,7 +662,6 @@
 		};
 		5F68753D1F73F55E00C55D9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 445833064F754421ABBA193E /* Pods-Maybach.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -867,7 +687,6 @@
 		};
 		5F68753E1F73F55E00C55D9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C015E2F6FE61BBE49F7FA5E /* Pods-Maybach.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -891,7 +710,6 @@
 		};
 		5F6875551F73FECF00C55D9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5963292ED3388A0BA88197B9 /* Pods-Runner.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -909,7 +727,6 @@
 		};
 		5F6875561F73FECF00C55D9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D352FD544AFC8909E20919F6 /* Pods-Runner.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
