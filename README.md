@@ -3,7 +3,7 @@ Maybach is a toolbox written in Swift. This is alpha version, some feature's can
 
 <p>
 
-[![codecov](https://codecov.io/gh/martin-przystalka/Maybach/branch/master/graph/badge.svg)](https://codecov.io/gh/r-lib/objectable) 
+[![codecov](https://codecov.io/gh/martin-przystalka/Maybach/branch/master/graph/badge.svg)](https://codecov.io/gh/r-lib/objectable)
 <a href="https://codeclimate.com/github/martin-przystalka/Maybach/maintainability"><img src="https://api.codeclimate.com/v1/badges/46dadcf02d64660c82a1/maintainability" /></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <img src="https://travis-ci.com/martin-przystalka/Maybach.svg?branch=master" />
@@ -58,7 +58,7 @@ Easy way to get substring without need to play with `String.Index`.
 let exampleText = "This is example foo text."
 let substring = exampleText.substring(from: 0, to: 3)
 let substringTwo = exampleText.substring(from: 8, to: 14)
-     
+
 print(substring)      // This
 print(substringTwo)   // example
 ```
@@ -88,7 +88,7 @@ DispatchQueue.background(delay: 0.2) { // delay in seconds, block will be execut
 ```
 
 #### logging
-`log` is a wrapper around print(). This type of logging force developers to keep one convention of printing and make application more readable. 
+`log` is a wrapper around print(). This type of logging force developers to keep one convention of printing and make application more readable.
 
 ```swift
 log(.info, self, #function, #line, "This is Example message.")
@@ -113,7 +113,7 @@ target '<Your Target Name>' do
     pod 'Maybach', '~> v1.0.0'
 end
 ```
-  
+
 You are almost done, now let cocoapods do thier job, run:
 
 `pod install`
@@ -131,7 +131,7 @@ Once you are setup with Carthage, simply just add line below to your `Cartfile`.
 
 ### Manually
 
-If you dont want to use any dependency management tool, you can do it manually via git submodule. 
+If you dont want to use any dependency management tool, you can do it manually via git submodule.
 
 [More about manual integration](https://www.raywenderlich.com/155150/dependency-management-using-git-submodules).
 
