@@ -110,7 +110,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Maybach', '~> v1.0.0'
+pod 'Maybach', :git => 'git@github.com:martin-przystalka/Maybach.git', :tag => '0.01.1'
+
 end
 ```
 
