@@ -23,7 +23,7 @@ final class DispatchQueueTests: XCTestCase {
     func testBackgroundWithoutDelayPassingNil() {
         let backgroundThreadExpectation = expectation(description: "should be executed without delay")
         
-        DispatchQueue.background(delay: nil) {
+        DispatchQueue.background {
             backgroundThreadExpectation.fulfill()
         }
         wait(for: [backgroundThreadExpectation], timeout: 0.1)
@@ -44,10 +44,8 @@ final class DispatchQueueTests: XCTestCase {
         
         DispatchQueue.background {
             XCTAssertFalse(Thread.isMainThread)
-            if !Thread.isMainThread {
-                backgroundThreadExpectation.fulfill()
-            }
+            backgroundThreadExpectation.fulfill()
         }
-        wait(for: [backgroundThreadExpectation], timeout: 0.5)
+        wait(for: [backgroundThreadExpectation], timeout: 1)
     }
 }
