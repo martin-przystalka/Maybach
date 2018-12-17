@@ -67,6 +67,17 @@ public class CustomNavigationBar: UINavigationBar {
         }
     }
     
+    ///Setter and getter for ``titleColor``.
+    @IBInspectable public var titleColor: UIColor! {
+        get {
+            let value = titleTextAttributes?[.foregroundColor] as? UIColor
+            return value ?? .white
+        }
+        set {
+            titleTextAttributes = [NSAttributedString.Key.foregroundColor: newValue]
+        }
+    }
+    
     ///Getter for leftBarButton.
     public var leftBarButton: UIBarButtonItem?
     
@@ -92,7 +103,7 @@ public class CustomNavigationBar: UINavigationBar {
     }
     
     private func onInit() {
-        titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         setBackgroundImage(UIImage(), for: .default)
         shadowImage = UIImage()
         isTranslucent = true
