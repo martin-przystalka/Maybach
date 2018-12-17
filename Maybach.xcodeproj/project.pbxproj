@@ -32,7 +32,7 @@
 		5F68754F1F73FECF00C55D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F68754E1F73FECF00C55D9F /* Assets.xcassets */; };
 		5F6875521F73FECF00C55D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6875501F73FECF00C55D9F /* LaunchScreen.storyboard */; };
 		5F68755D1F74E7CC00C55D9F /* UINib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F68755C1F74E7CC00C55D9F /* UINib+Extension.swift */; };
-		5F6875611F74E84B00C55D9F /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875601F74E84B00C55D9F /* UIResponder+Extension.swift */; };
+		5F6875611F74E84B00C55D9F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875601F74E84B00C55D9F /* NSObject+Extension.swift */; };
 		5F6875631F74E86200C55D9F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875621F74E86200C55D9F /* Functions.swift */; };
 		5F6875671F74E9B100C55D9F /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875661F74E9B100C55D9F /* CustomNavigationBar.swift */; };
 		5F6875691F74E9C100C55D9F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6875681F74E9C100C55D9F /* File.swift */; };
@@ -101,7 +101,7 @@
 		5F6875511F73FECF00C55D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6875531F73FECF00C55D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F68755C1F74E7CC00C55D9F /* UINib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Extension.swift"; sourceTree = "<group>"; };
-		5F6875601F74E84B00C55D9F /* UIResponder+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
+		5F6875601F74E84B00C55D9F /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		5F6875621F74E86200C55D9F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		5F6875661F74E9B100C55D9F /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		5F6875681F74E9C100C55D9F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 			children = (
 				5F68756A1F74E9D500C55D9F /* UIColor+Extension.swift */,
 				5F68755C1F74E7CC00C55D9F /* UINib+Extension.swift */,
-				5F6875601F74E84B00C55D9F /* UIResponder+Extension.swift */,
+				5F6875601F74E84B00C55D9F /* NSObject+Extension.swift */,
 				5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */,
 				5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */,
 				1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */,
@@ -450,7 +450,7 @@
 				1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */,
 				5FADC3AE1F7D25DD0013BBF1 /* String+Extension.swift in Sources */,
 				5F68756B1F74E9D500C55D9F /* UIColor+Extension.swift in Sources */,
-				5F6875611F74E84B00C55D9F /* UIResponder+Extension.swift in Sources */,
+				5F6875611F74E84B00C55D9F /* NSObject+Extension.swift in Sources */,
 				5F68755D1F74E7CC00C55D9F /* UINib+Extension.swift in Sources */,
 				5F6875691F74E9C100C55D9F /* File.swift in Sources */,
 				1C810D5520208CD8006CE764 /* LogType.swift in Sources */,
