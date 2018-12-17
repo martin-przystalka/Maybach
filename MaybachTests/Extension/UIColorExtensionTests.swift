@@ -29,25 +29,37 @@ final class UIColorExtensionTests: XCTestCase {
     
     func testDarker() {
         let color = UIColor(hex: "53f442")
-        let newColor = color.darker(by: 0.1)
-        XCTAssertNotEqual(newColor, UIColor(hex: "53f442"))
+        let newColor = color.darker(by: 0.2)
+        XCTAssertEqual(newColor.hex, "#20C10F")
     }
     
     func testDarkerDefaultValue() {
         let color = UIColor(hex: "53f442")
         let newColor = color.darker()
-        XCTAssertNotEqual(newColor, UIColor(hex: "53f442"))
+        XCTAssertEqual(newColor.hex, "#39DA28")
     }
     
     func testLighter() {
         let color = UIColor(hex: "53f442")
-        let newColor = color.lighter(by: 0.1)
-        XCTAssertNotEqual(newColor, UIColor(hex: "53f442"))
+        let newColor = color.lighter(by: 0.2)
+        XCTAssertEqual(newColor.hex, "#86FF75")
     }
     
     func testLighterDefaultValue() {
-        let color = UIColor(hex: "53f442")
+        let color = UIColor(hex: "86FF75")
         let newColor = color.lighter()
-        XCTAssertNotEqual(newColor, UIColor(hex: "53f442"))
+        XCTAssertEqual(newColor.hex, "#9FFF8E")
+    }
+    
+    func testWhiteHex() {
+        let color = UIColor.white
+        let colorHex = color.hex
+        XCTAssertEqual(colorHex, "#FFFFFF")
+    }
+    
+    func testCustomHex() {
+        let hexString = "#53F442"
+        let color = UIColor(hex: hexString)
+        XCTAssertEqual(color.hex, hexString)
     }
 }
