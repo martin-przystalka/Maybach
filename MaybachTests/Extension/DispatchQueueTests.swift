@@ -36,7 +36,7 @@ final class DispatchQueueTests: XCTestCase {
         DispatchQueue.background(delay: delay) {
             backgroundThreadExpectation.fulfill()
         }
-        wait(for: [backgroundThreadExpectation], timeout: delay + 0.1)
+        wait(for: [backgroundThreadExpectation], timeout: delay + 1)
     }
     
     func testBackgroundThread() {
