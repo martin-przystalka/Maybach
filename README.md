@@ -5,7 +5,6 @@ Maybach is a toolbox written in Swift. This is alpha version, some feature's can
 <a href="https://codecov.io/gh/martin-przystalka/Maybach"><img src="https://codecov.io/gh/martin-przystalka/Maybach/branch/master/graph/badge.svg" /></a>
 <a href="https://codeclimate.com/github/martin-przystalka/Maybach/maintainability"><img src="https://api.codeclimate.com/v1/badges/46dadcf02d64660c82a1/maintainability" /></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
-
 <a href="https://travis-ci.org/martin-przystalka/Maybach"><img src="https://travis-ci.com/martin-przystalka/Maybach.svg?branch=master" /></a>
 <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg" />
 <a href="https://github.com/martin-przystalka/Maybach/releases"><img src="https://img.shields.io/github/release/martin-przystalka/Maybach.svg" /></a>
