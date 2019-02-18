@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0EDCE921C7F05D00FA1E70 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0EDCE821C7F05D00FA1E70 /* UILabel+Extension.swift */; };
 		1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */; };
 		1C570647205AD00600143482 /* MaybachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570646205AD00600143482 /* MaybachTests.swift */; };
 		1C570649205AD00600143482 /* Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C0EDCE821C7F05D00FA1E70 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		1C570644205AD00600143482 /* MaybachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaybachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C570646205AD00600143482 /* MaybachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybachTests.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				5FADC3AD1F7D25DD0013BBF1 /* String+Extension.swift */,
 				5FB2EF2B1FD686E600368CF7 /* CGRect+Extension.swift */,
 				1C47CFCE2056724900595DB1 /* DispatchQueue+Extension.swift */,
+				1C0EDCE821C7F05D00FA1E70 /* UILabel+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0EDCE921C7F05D00FA1E70 /* UILabel+Extension.swift in Sources */,
 				5F6875631F74E86200C55D9F /* Functions.swift in Sources */,
 				1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */,
 				5FADC3AE1F7D25DD0013BBF1 /* String+Extension.swift in Sources */,
