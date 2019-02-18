@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maybach  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Maybach  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Maybach Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Maybach Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Maybach  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/CustomNavigationBar.html">CustomNavigationBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/File.html">File</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/LogType.html">LogType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UILabel.html">UILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UINib.html">UINib</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:7Maybach3logyySSF">log(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:7Maybach3logyyAA7LogTypeO_ypSSSiSStF">log(_:_:_:_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='maybach' class='heading'>Maybach</h1>
+
+<p>Maybach is a toolbox written in Swift. This is alpha version, some feature&rsquo;s can be not available yet.</p>
+
+<p>
+
+[![codecov](https://codecov.io/gh/martin-przystalka/Maybach/branch/master/graph/badge.svg)](https://codecov.io/gh/martin-przystalka/Maybach)
+<a href="https://codeclimate.com/github/martin-przystalka/Maybach/maintainability"><img src="https://api.codeclimate.com/v1/badges/46dadcf02d64660c82a1/maintainability" /></a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a href="https://travis-ci.org/martin-przystalka/Maybach"><img src="https://travis-ci.com/martin-przystalka/Maybach.svg?branch=master" /></a>
+<img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg" />
+[![GitHub release](https://img.shields.io/github/release/martin-przystalka/Maybach.svg)](https://github.com/martin-przystalka/Maybach/releases)
+<a href="https://martin-przystalka.github.io/Maybach/"><img src="https://img.shields.io/badge/Documentation-%F0%9F%91%8D-blue.svg" /></a>
+
+
+</p>
+<h2 id='introduction' class='heading'>Introduction</h2>
+
+<p>Maybach has been created in come for my personal requirements. Creating many new project gave me point of look to my behaviours. I just have been copying same code, same classes/extension to new projects and then I realise that this is a time to create framework - Maybach!</p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li><a href="#view-from-xib">view from xib</a></li>
+<li><a href="#adjust-color">adjust color</a></li>
+<li><a href="#hex-color">hex color</a></li>
+<li><a href="#substring">substring</a></li>
+<li><a href="#string-is-number">string. Is number?</a></li>
+<li><a href="#background-thread">background thread</a></li>
+<li><a href="#logging">logging</a></li>
+</ul>
+<h4 id='view-from-xib' class='heading'>view from xib</h4>
+
+<p>Fast initializing view from xib. Just pass your view class to <code>get</code>, that&rsquo;s all. Remember to have same xib name as class name:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">viewFromXIB</span> <span class="o">=</span> <span class="kt">UINib</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="kt">ExampleView</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="c1">// constant viewFromXIB is type of ExampleView.</span>
+</code></pre>
+<h4 id='adjust-color' class='heading'>adjust color</h4>
+
+<p>Change color using <code>lighter</code> or <code>darker</code> function, just pass desired percentage or leave default value.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">color</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">blue</span>
+<span class="k">let</span> <span class="nv">lighterColor</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="nf">lighter</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="mf">0.20</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">defaultLighterColor</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="nf">lighter</span><span class="p">()</span> <span class="c1">//making color lighter by 40%</span>
+</code></pre>
+<h4 id='hex-color' class='heading'>hex color</h4>
+
+<p>Get color from hex using UIColor constructor. If you forget # sign, it is not a problem, this case is supported.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">hexColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="s">"#000000"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">hexColorWithOutHash</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="s">"000000"</span><span class="p">)</span>
+</code></pre>
+<h4 id='substring' class='heading'>substring</h4>
+
+<p>Easy way to get substring without need to play with <code>String.Index</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">exampleText</span> <span class="o">=</span> <span class="s">"This is example foo text."</span>
+<span class="k">let</span> <span class="nv">substring</span> <span class="o">=</span> <span class="n">exampleText</span><span class="o">.</span><span class="nf">substring</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">substringTwo</span> <span class="o">=</span> <span class="n">exampleText</span><span class="o">.</span><span class="nf">substring</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="mi">14</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">substring</span><span class="p">)</span>      <span class="c1">// This</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">substringTwo</span><span class="p">)</span>   <span class="c1">// example</span>
+</code></pre>
+<h4 id='string-is-number' class='heading'>string. Is number?</h4>
+
+<p>Elegant check for string.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">numberString</span> <span class="o">=</span> <span class="s">"-1212443.242325"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">numberString</span><span class="o">.</span><span class="n">isNumber</span><span class="p">)</span> <span class="c1">// true</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"0"</span><span class="o">.</span><span class="n">isNumber</span><span class="p">)</span> <span class="c1">// true</span>
+</code></pre>
+<h4 id='background-thread' class='heading'>background thread</h4>
+
+<p>Human friendly syntax for accessing async background thread.</p>
+<pre class="highlight swift"><code><span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">background</span> <span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>You can also pass delay.</p>
+<pre class="highlight swift"><code><span class="kt">DispatchQueue</span><span class="o">.</span><span class="nf">background</span><span class="p">(</span><span class="nv">delay</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// delay in seconds, block will be executed after 200 milliseconds.</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='logging' class='heading'>logging</h4>
+
+<p><code>log</code> is a wrapper around print(). This type of logging force developers to keep one convention of printing and make application more readable.</p>
+<pre class="highlight swift"><code><span class="nf">log</span><span class="p">(</span><span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="k">self</span><span class="p">,</span> <span class="kd">#function</span><span class="p">,</span> <span class="kd">#line</span><span class="p">,</span> <span class="s">"This is Example message."</span><span class="p">)</span>
+<span class="nf">log</span><span class="p">(</span><span class="o">.</span><span class="n">error</span><span class="p">,</span> <span class="k">self</span><span class="p">,</span> <span class="kd">#function</span><span class="p">,</span> <span class="kd">#line</span><span class="p">)</span>
+</code></pre>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Go to project package using terminal and install using command:</p>
+
+<p><code>gem install cocoapods</code></p>
+
+<p>Next you will have to specify Maybach in your podfile:</p>
+<pre class="highlight plaintext"><code>source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target '&lt;Your Target Name&gt;' do
+pod 'Maybach', :git =&gt; 'git@github.com:martin-przystalka/Maybach.git', :tag =&gt; '0.01.1'
+
+end
+</code></pre>
+
+<p>You are almost done, now let cocoapods do thier job, run:</p>
+
+<p><code>pod install</code></p>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>Carthage is intended to be the simplest way to add frameworks to your Cocoa application.</p>
+
+<p>Carthage builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings. <a href="https://github.com/Carthage/Carthage">More about Carthage</a>.</p>
+
+<p>Once you are setup with Carthage, simply just add line below to your <code>Cartfile</code>.</p>
+
+<p><code>github &quot;martin-przystalka/Maybach&quot;</code></p>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you dont want to use any dependency management tool, you can do it manually via git submodule.</p>
+
+<p><a href="https://www.raywenderlich.com/155150/dependency-management-using-git-submodules">More about manual integration</a>.</p>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>I hope you enjoy Maybach! If so it would be great to have another pair of hands to improve this project.
+How can you do it? Here you have some types:</p>
+
+<ul>
+<li>Suggest new features.</li>
+<li>Improve documentation.</li>
+<li>Checking pull requests.</li>
+<li>Making pull request.</li>
+<li>Help with resloving issues.</li>
+<li>Reporting bugs by making issue on github.</li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This project is released under the <a href="https://github.com/martin-przystalka/Maybach/blob/master/LICENSE">MIT license</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/martin-przystalka/Maybach/blob/master/README.md" target="_blank" rel="external">Martin Przystalka</a>. All rights reserved. (Last updated: 2019-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

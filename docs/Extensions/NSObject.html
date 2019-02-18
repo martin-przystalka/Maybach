@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UINib Extension Reference</title>
+    <title>NSObject Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/UINib" class="dashAnchor"></a>
-    <a title="UINib Extension Reference"></a>
+    <a name="//apple_ref/swift/Extension/NSObject" class="dashAnchor"></a>
+    <a title="NSObject Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Maybach Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Maybach Reference</a>
         <img id="carat" src="../img/carat.png" />
-        UINib Extension Reference
+        NSObject Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -88,14 +88,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>UINib</h1>
+            <h1>NSObject</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">UINib</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
-            <p>Extension for UINib class.</p>
+            <p>Extension for NSObject class.</p>
 
           </section>
           <section class="section task-group-section">
@@ -104,9 +104,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So5UINibC7MaybachE3getyxSgxmlFZ"></a>
-                    <a name="//apple_ref/swift/Method/get(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So5UINibC7MaybachE3getyxSgxmlFZ">get(_:)</a>
+                    <a name="/s:So8NSObjectC7MaybachE4nameSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So8NSObjectC7MaybachE4nameSSvpZ">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -114,15 +114,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Instantiating view from xib. Takes type in parameter which is returning later.
-Return nil if there is no match to instantiate.</p>
+                        <p>Return String description of current type.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="k">get</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">objectType</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
