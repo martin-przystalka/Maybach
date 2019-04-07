@@ -74,7 +74,7 @@ public class CustomNavigationBar: UINavigationBar {
             return value ?? .white
         }
         set {
-            titleTextAttributes = [NSAttributedString.Key.foregroundColor: newValue]
+            titleTextAttributes = [NSAttributedString.Key.foregroundColor: newValue ?? .black]
         }
     }
     
