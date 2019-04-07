@@ -16,7 +16,7 @@ public extension DispatchQueue {
      'Delay' parameter is in seconds with accuracy to miliseconds.
      'Execute' closure parameter is triggered after delay time.
     */
-    public static func background(delay: Double? = nil, execute: @escaping (() -> Void)) {
+    static func background(delay: Double? = nil, execute: @escaping (() -> Void)) {
         guard let delay = delay else {
             runInBackground(deadline: DispatchTime.now(), execute: execute)
             return
