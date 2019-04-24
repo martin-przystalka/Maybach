@@ -6,6 +6,8 @@
 //  Copyright © 2018 MH. The MIT License (MIT).
 //
 
+import Foundation
+
 ///Extensions for String class.
 extension String {
     
@@ -25,5 +27,14 @@ extension String {
     public var isNumber: Bool {
         let isNumber = Double(self) != nil
         return isNumber
+    }
+
+    /**
+     Returns translation for given key. Search in main bundle for file Localizable.strings, print message if not found.
+     If key is not found, then message is printed.
+ */
+    public var localize: String {
+        let provider = LocalizeProvider()
+        return provider.localize(self)
     }
 }

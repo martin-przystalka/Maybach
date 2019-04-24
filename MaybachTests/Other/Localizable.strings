@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Maybach
+
+  Created by martin.przystalka on 19/04/2019.
+  Copyright © 2019 MH. All rights reserved.
+*/
+
+"testKey" = "This is test value";
