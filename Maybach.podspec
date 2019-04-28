@@ -2,10 +2,10 @@
 
 Pod::Spec.new do |s|
   s.name            = "Maybach"
-  s.swift_version   = '4.2'
-  s.version         = "0.01.1"
-  s.summary         = "Maybach is a mix of help class and extension's"
-  s.description     = "Maybach is a mix of help extension's and class"
+  s.swift_version   = '5'
+  s.version         = "1.0.0"
+  s.summary         = "Maybach is a mix of help class and extensions"
+  s.description     = "Maybach is a mix of help extensions and class"
   s.homepage        = "https://github.com/martin-przystalka/Maybach/blob/master/README.md"
   s.platform        = :ios, "8.0"
   s.license         = "MIT"
