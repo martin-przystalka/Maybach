@@ -6,7 +6,7 @@ Maybach is a toolbox written in Swift. This is alpha version, some feature's can
 <a href="https://codeclimate.com/github/martin-przystalka/Maybach/maintainability"><img src="https://api.codeclimate.com/v1/badges/46dadcf02d64660c82a1/maintainability" /></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <a href="https://travis-ci.org/martin-przystalka/Maybach"><img src="https://travis-ci.com/martin-przystalka/Maybach.svg?branch=master" /></a>
-<img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg" />
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg" /></a>
 <a href="https://github.com/martin-przystalka/Maybach/releases"><img src="https://img.shields.io/github/release/martin-przystalka/Maybach.svg" /></a>
 <a href="https://martin-przystalka.github.io/Maybach/"><img src="https://img.shields.io/badge/Documentation-%F0%9F%91%8D-blue.svg" /></a>
 </p>
@@ -23,6 +23,7 @@ Maybach has been created in come for my personal requirements. Creating many new
 - [string. Is number?](#string-is-number)
 - [background thread](#background-thread)
 - [logging](#logging)
+- [and more](#and-more)
 
 #### view from xib
 Fast initializing view from xib. Just pass your view class to `get`, that's all. Remember to have same xib name as class name:
@@ -91,6 +92,9 @@ DispatchQueue.background(delay: 0.2) { // delay in seconds, block will be execut
 log(.info, self, #function, #line, "This is Example message.")
 log(.error, self, #function, #line)
 ```
+
+#### and more
+Visit documentation site to read more about Maybach https://martin-przystalka.github.io/Maybach/
 
 ## Installation
 
