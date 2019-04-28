@@ -10,10 +10,10 @@
 import XCTest
 
 
-final class LocalizeProviderTest: XCTest {
+final class LocalizeProviderTest: XCTestCase {
 
     func testLocalizableFileExist() {
-        let provider = LocalizeProvider()
+        let provider = LocalizeProvider(bundle: Bundle(for: LocalizeProviderTest.self))
         XCTAssertNotNil(provider.localizableFile)
     }
 
@@ -28,7 +28,7 @@ final class LocalizeProviderTest: XCTest {
     }
 
     func testLocalizableExistingKey() {
-        let provider = LocalizeProvider()
+        let provider = LocalizeProvider(bundle: Bundle(for: LocalizeProviderTest.self))
         XCTAssertEqual(provider.localize("testKey"), "This is test value")
     }
 }

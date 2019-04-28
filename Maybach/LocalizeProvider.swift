@@ -9,8 +9,14 @@
 import Foundation
 
 class LocalizeProvider {
+    let bundle: Bundle
+
+    init(bundle: Bundle = Bundle.main) {
+        self.bundle = bundle
+    }
+
     var localizableFile: NSDictionary? {
-        guard let path = Bundle.main.path(forResource: "Localizable", ofType: "strings"),
+        guard let path = bundle.path(forResource: "Localizable", ofType: "strings"),
             let localizableDictionary = NSDictionary(contentsOfFile: path) else {
                 log("Localizable.strings file not found.")
                 return nil
