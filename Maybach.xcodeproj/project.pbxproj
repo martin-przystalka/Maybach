@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C0EDCE921C7F05D00FA1E70 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0EDCE821C7F05D00FA1E70 /* UILabel+Extension.swift */; };
-		1C1A23D9226A672100B75C01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A23D8226A672100B75C01 /* Localizable.strings */; };
 		1C1A23DB226A67DD00B75C01 /* LocalizeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A23DA226A67DD00B75C01 /* LocalizeProvider.swift */; };
 		1C1A23DD226A6AEF00B75C01 /* LocalizeProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A23DC226A6AEF00B75C01 /* LocalizeProviderTest.swift */; };
 		1C1A23E0226A6B6200B75C01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A23DF226A6B6200B75C01 /* Localizable.strings */; };
@@ -16,6 +15,8 @@
 		1C570647205AD00600143482 /* MaybachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570646205AD00600143482 /* MaybachTests.swift */; };
 		1C570649205AD00600143482 /* Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; };
 		1C570654205AD84F00143482 /* FileTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C570653205AD84F00143482 /* FileTest.swift */; };
+		1C7869512282ECCB00C6408F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7869502282ECCB00C6408F /* NetworkManager.swift */; };
+		1C7869532282ECF300C6408F /* ApiCallContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7869522282ECF300C6408F /* ApiCallContainer.swift */; };
 		1C810D4F202086D0006CE764 /* Maybach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; };
 		1C810D50202086D0006CE764 /* Maybach.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6875341F73F55E00C55D9F /* Maybach.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C810D5520208CD8006CE764 /* LogType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C810D5420208CD8006CE764 /* LogType.swift */; };
@@ -79,7 +80,6 @@
 
 /* Begin PBXFileReference section */
 		1C0EDCE821C7F05D00FA1E70 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		1C1A23D8226A672100B75C01 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1C1A23DA226A67DD00B75C01 /* LocalizeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeProvider.swift; sourceTree = "<group>"; };
 		1C1A23DC226A6AEF00B75C01 /* LocalizeProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeProviderTest.swift; sourceTree = "<group>"; };
 		1C1A23DF226A6B6200B75C01 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		1C570646205AD00600143482 /* MaybachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybachTests.swift; sourceTree = "<group>"; };
 		1C570648205AD00600143482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C570653205AD84F00143482 /* FileTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTest.swift; sourceTree = "<group>"; };
+		1C7869502282ECCB00C6408F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1C7869522282ECF300C6408F /* ApiCallContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallContainer.swift; sourceTree = "<group>"; };
 		1C810D5420208CD8006CE764 /* LogType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogType.swift; sourceTree = "<group>"; };
 		1C8F290E20A186E100805C77 /* DispatchQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueTests.swift; sourceTree = "<group>"; };
 		1C8F291020A18B5200805C77 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
@@ -251,7 +253,6 @@
 				5F68754E1F73FECF00C55D9F /* Assets.xcassets */,
 				5F6875501F73FECF00C55D9F /* LaunchScreen.storyboard */,
 				5F6875531F73FECF00C55D9F /* Info.plist */,
-				1C1A23D8226A672100B75C01 /* Localizable.strings */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -277,6 +278,8 @@
 				5F6875681F74E9C100C55D9F /* File.swift */,
 				1C810D5420208CD8006CE764 /* LogType.swift */,
 				1C1A23DA226A67DD00B75C01 /* LocalizeProvider.swift */,
+				1C7869502282ECCB00C6408F /* NetworkManager.swift */,
+				1C7869522282ECF300C6408F /* ApiCallContainer.swift */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -423,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6875521F73FECF00C55D9F /* LaunchScreen.storyboard in Resources */,
-				1C1A23D9226A672100B75C01 /* Localizable.strings in Resources */,
 				5F68754F1F73FECF00C55D9F /* Assets.xcassets in Resources */,
 				5F68754D1F73FECF00C55D9F /* Main.storyboard in Resources */,
 			);
@@ -475,6 +477,8 @@
 				1C0EDCE921C7F05D00FA1E70 /* UILabel+Extension.swift in Sources */,
 				5F6875631F74E86200C55D9F /* Functions.swift in Sources */,
 				1C47CFCF2056724900595DB1 /* DispatchQueue+Extension.swift in Sources */,
+				1C7869512282ECCB00C6408F /* NetworkManager.swift in Sources */,
+				1C7869532282ECF300C6408F /* ApiCallContainer.swift in Sources */,
 				5FADC3AE1F7D25DD0013BBF1 /* String+Extension.swift in Sources */,
 				5F68756B1F74E9D500C55D9F /* UIColor+Extension.swift in Sources */,
 				5F6875611F74E84B00C55D9F /* NSObject+Extension.swift in Sources */,

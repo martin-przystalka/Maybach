@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var customNavigationBar: CustomNavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        log(LogType.info, self, #function, #line)
+        let apiCall = RegisterApiCall(email: "", password: "")
+        let networkManager = NetworkManager()
+        networkManager.task(withApiCall: apiCall) { (response) in
+            
+        }
         
         customNavigationBar.onLeftBarButtonClick = {
             log(LogType.error, self, #function, #line)
@@ -23,5 +27,50 @@ class ViewController: UIViewController {
         customNavigationBar.onRightBarButtonClick = {
             log(LogType.error, self, #function, #line)
         }
+    }
+}
+
+
+struct RegisterResponse: Decodable, ApiCallResponse {
+
+}
+
+
+struct RegisterRequest: Encodable {
+
+}
+
+
+class RegisterApiCall: ApiCallContainer {
+    typealias ApiResponse = RegisterResponse
+    let httpBody: RegisterRequest
+
+    init(email: String, password: String) {
+        httpBody = RegisterRequest()
+    }
+
+    var request: URLRequest {
+        do {
+            let encoder = JSONEncoder()
+            let requestBody = try encoder.encode(httpBody)
+            var request = NSMutableURLRequest(url: URL(fileURLWithPath: "")) as URLRequest
+            request.httpBody = requestBody
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpMethod = "post"
+            return request
+        } catch {
+            log("\(error)")
+        }
+        fatalError("expect to have request at this point")
+    }
+
+    func response(data: Data) -> ApiResponse? {
+        do {
+            let response: RegisterResponse? = try JSONDecoder().decode(RegisterResponse.self, from: data)
+            return response
+        } catch {
+            log(.exception, self, #function, #line)
+        }
+        return nil
     }
 }
